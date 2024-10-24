@@ -1,0 +1,174 @@
+<!-- Complete this worksheet in HTML and CSS. Instructions are as comments; you may use reference_sheet.html and the internet to jog your memory on HTML tags and CSS. -->
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Basic HTML</title>
+        <link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,400,300,600,700&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+        
+        <style>
+        
+            .alert {
+                background-image: linear-gradient(to left, violet, indigo, blue,green, gold, red);
+                -webkit-background-clip: text;
+                -moz-background-clip: text;
+                background-clip: text;
+                color: transparent;
+                width: 100px;
+                height: 20px;
+            }
+
+            .books {
+                border: solid hotpink;
+                width: 35%;
+            }
+
+            p {
+                color: #5A5A5A;
+                font-size: 16px;
+                font-family: 'Open Sans', serif;
+/*                width: 50%;*/
+            }
+
+            li {
+                color: #5A5A5A;
+                font-size: 16px;
+                font-family: 'Open Sans', serif;
+/*                width: 50%;*/
+            }
+
+            a {
+                color: hotpink;
+            }
+            #quote {
+                color: magenta;
+                font-style: italic;
+                border: solid lightskyblue 2px;
+            }
+
+            #bargraph {
+                border: 1px solid gray;
+                padding-left: 10px;
+                padding-bottom: 10px;
+                width: 25%;
+            }
+            .bar_label {
+                color: red;
+            }
+            #longest {
+                width: 300px;
+                height: 10px;
+                background: gray;
+                border: 1px solid red;
+            }
+            #longer {
+                width: 200px;
+                height: 10px;
+                background: gray;
+                border: 1px solid red;
+            }
+            #long {
+                width: 100px;
+                height: 10px;
+                background: gray;
+                border: 1px solid red;
+            }
+
+        </style>
+    </head>
+    
+    <body>
+
+        <h1>A little bit about me!</h1>
+        
+        <h2>My intro</h2>
+            <p> My name is Jenna! I am from <i> Utica, NY </i>. I like to paint and hike for fun. Right now I am studying <strong> Magazine, News and Digital Journalism </strong>. In my family, I have a younger sister and an English Foxhound.
+        <!-- Include: a brief intro to yourself -- where you're from, what you like to do for fun, what you're studying, and who your community or family is. -->
+        <!-- Tags to use: <p>, <strong>, <i> -->
+        
+
+        <h2>Fun Links!</h2>
+            <p> <a href="https://youtu.be/VY14zcUM9SI?feature=shared">Lunch Lady Land </a> </p>
+            <p> <a href="https://issuu.com/thegoodlifemag/docs/tgl_master_doc_spring_2024_issue/4">One of my articles from last semester </a> </p>
+        <!-- Include: at least two generic links -->
+        <!-- Tags to use: <p>, <a> -->
+
+    
+        <h2> ~ Challenge: Why is my text maroon? ~</h2>
+        <!-- Challenge! The text in your p tags is currently maroon. Figure out why and make it dark gray, using a hex code. (Hint: use google to find a hex code for a dark gray) When you're done, change the text in the <p> tag below to "My text is gray." -->
+        <p>My text is gray.</p>
+
+
+        <h2>My favorite meme</h2>
+        <!-- Include: "large_wink.png" as an image -->
+        <!-- Tags to use: <img> -->
+        <!-- Hint! Use 'reference_sheet.html', which you downloaded with this file, to remember how to include an image. -->
+        <img src="large_wink.png" height=300px width=400px>
+
+    
+        <h2>Why I'm a great student</h2>
+        <!-- Include: Use 'reference_sheet.html' to figure out how to add an unordered list here -->
+        <!-- Tags to use: <ul>, <li>, <strong> -->
+        <ul>
+            <li> <p>I like to learn </li>
+            <li> I'm reliable </p> </li>
+            <li> <p class="alert" font=""> <strong> I'm creative! </strong> </p></li>
+        </ul>
+        
+    
+        <h2>Top 3 most famous people from my hometown</h2>
+        <!-- Include: an ordered list -->
+        <!-- Tags to use: <ol>, <li>, <a> -->
+        <ol>
+            <li>Dick Clark</li>
+            <li>Will Smith</li>
+            <li>Joe Bonamassa</li>
+        </ol>
+
+
+        <h2> ~ Challenge: Read my poetry ~</h2>
+        <!-- Challenge! Use the internet to figure out what a <br> tag is. Write a short poem about your college experience so far. -->
+        <!-- Tags to use: <p> tags for your lines of poetry, and at least two <br> tags -->
+        <p> hunched over my computer <br> want to sleep <br> but I am writing poetry <br> for a class about data and google sheets
+    
+
+        <h2>This is one of my favorite quotes</h2>
+        <!-- Include: a quote from a book -- quote should be in italics and gray, title of source should be in an <h3> tag -->
+        <!-- Tags to use: <h3>, <p> with an id named 'quote' that is styled in the <style> section -->
+        <p style="quotes"> <i> “We must assume every event has significance and contains a message that pertains to our questions...this especially applies to what we used to call bad things...the challenge is to find the silver lining in every event, no matter how negative.” </i> </p>
+        <h3 style="color:#5A5A5A"> -- James Redfield, The Celestine Prophecy </h3>
+
+
+        <h2>These are more of my favorite books</h2>
+        <!-- Include: an unordered list of at least three books, list items should have a border -->
+        <!-- Tags to use: <ul>, <li> with classes named 'book' that is styled in the <style> section -->
+        <ul class="books">
+            <li>The Devil Wears Prada by Lauren Weisberger</li>
+            <li>The Alchemist by Paulo Coelho</li>
+            <li>The October Country by Ray Bradbury</li>
+        </ul>
+        
+
+        <h2>Here's how I normally spend my weekend</h2>
+        <!-- Include: a complete Datawrapper chart (you can make up data) showing what you normally spend time on over the weekend; must include all requirements of a complete chart (hed, subhed, intentional colors, byline, etc.) -->
+        <!-- Tags to use: <iframe> -->
+        <iframe title="Apart from sleeping, I spend my weekends doing school work and going outside of campus to run errands or experience Syracuse" aria-label="Pie Chart" id="datawrapper-chart-gYz0u" src="https://datawrapper.dwcdn.net/gYz0u/1/" alt="Pie Chart showing the distribution in percentages of how much I spend doing different activities on an average weekend in SU. I spend most of my time sleeping, working on school work and going outside of campus to run errands or experience Syracuse." scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="508" data-external="1"></iframe><script type="text/javascript">!function(){"use strict";window.addEventListener("message",(function(a){if(void 0!==a.data["datawrapper-height"]){var e=document.querySelectorAll("iframe");for(var t in a.data["datawrapper-height"])for(var r=0;r<e.length;r++)if(e[r].contentWindow===a.source){var i=a.data["datawrapper-height"][t]+"px";e[r].style.height=i}}}))}();
+        </script>
+
+
+        <h3>~ Challenge: A very simple bar graph ~</h3>
+        <!-- Challenge! Add CSS styles to '#longer' and '#long' to make the bar graph look like it's ordered from longest to shortest. (Use the CSS in #longest as a reference.) You may also change the h4 text and the p text to make this simple bar chart reflect real (or fake) data. -->
+
+        <div id="bargraph">
+            <h4>My Patience Throughout the Day</h4>
+            <p class="bar_label">Morning</p>
+            <div id="longest"></div>
+            <p class="bar_label">Afternoon</p>
+            <div id="longer"></div>
+            <p class="bar_label">Night</p>
+            <div id="long"></div>
+        </div>
+     
+    </body>
+</html>
